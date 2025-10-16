@@ -14,3 +14,18 @@ Bu proje, Uluslararası Uzay İstasyonu’nun (ISS) anlık konumunu takip eder v
 2. Bağımlılıkları yükleyin:
    ```bash
    pip install -r requirements.txt
+
+3.Script’i çalıştırın:
+  python iss_tracker.py
+
+  Kullanım
+iss_tracker.py içindeki user_location değişkenini kendi enlem ve boylamınızla güncelleyin (örneğin, İstanbul için (41.0082, 28.9784)).
+Script, ISS’nin konumunu ve sana olan mesafesini gösterir.
+ISS 1000 km’den yakınsa uyarı verir.
+Notlar
+Open Notify API’si ücretsizdir ve kimlik doğrulama gerektirmez.
+Ülke bilgisi şu an basit bir yer tutucudur; gerçek ülke bilgisi için Nominatim API’si eklenebilir.
+Kendi konumunuzu Google Maps’ten enlem/boylam olarak alabilirsiniz.
+Gelecek İyileştirmeler
+Ülke bilgisi için Nominatim entegrasyonu.
+E-posta veya SMS bildirimleri ekleme.
